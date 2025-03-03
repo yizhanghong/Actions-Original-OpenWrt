@@ -62,6 +62,9 @@ git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall/luc
 #git checkout ebd3355bdf2fcaa9e0c43ec0704a8d9d8cf9f658
 #cd -
 
+# 拉取 upx
+git clone https://github.com/kuoruan/openwrt-upx.git package/openwrt-upx
+
 # 拉取 ShadowSocksR Plus+
 #git clone https://github.com/fw876/helloworld.git -b master package/helloworld
 
