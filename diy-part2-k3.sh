@@ -42,6 +42,9 @@ rm -rf feeds/packages/lang/golang
 # 拉取 golang
 git clone https://github.com/sbwml/packages_lang_golang.git -b 23.x feeds/packages/lang/golang
 
+# 拉取 upx
+git clone https://github.com/kuoruan/openwrt-upx.git package/openwrt-upx
+
 # 删除自带 v2ray-geodata
 rm -rf feeds/packages/net/v2ray-geodata
 rm -rf package/feeds/packages/v2ray-geodata
@@ -61,9 +64,6 @@ git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall/luc
 #cd package/passwall/luci
 #git checkout ebd3355bdf2fcaa9e0c43ec0704a8d9d8cf9f658
 #cd -
-
-# 拉取 upx
-git clone https://github.com/kuoruan/openwrt-upx.git package/openwrt-upx
 
 # 拉取 ShadowSocksR Plus+
 #git clone https://github.com/fw876/helloworld.git -b master package/helloworld
