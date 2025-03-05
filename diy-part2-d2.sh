@@ -23,7 +23,7 @@ sed -i "/.*timezone='CST-8'.*/i\ set system.@system[-1].zonename='Asia/Shanghai'
 
 # 开启 WiFi
 sed -i 's/disabled=.*/disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
-#sed -i 's/ssid=*.*/ssid=OpenWrt/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+#sed -i 's/ssid=.*/ssid=OpenWrt/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # 删除自带 autosamba
 rm -rf feeds/other/lean/autosamba
