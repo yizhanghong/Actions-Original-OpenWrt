@@ -80,15 +80,15 @@ git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci/luci-th
 # 删除自带 ddns-scripts
 #rm -rf feeds/packages/net/ddns-scripts
 # 删除自带 ntfs-3g
-#rm -rf feeds/packages/utils/ntfs-3g
+rm -rf feeds/packages/utils/ntfs-3g
 # 删除 passwall-packages 中 hysteria
 #rm -rf package/passwall/packages/hysteria
 # 删除 passwall-packages 中 naiveproxy
 #rm -rf package/passwall/packages/naiveproxy
 # 删除自带 tailscale
-#rm -rf feeds/packages/net/tailscale
+rm -rf feeds/packages/net/tailscale
 # 删除自带 socat
-#rm -rf feeds/packages/net/socat
+rm -rf feeds/packages/net/socat
 # 删除自带 luci-app-socat
 rm -rf feeds/lienol/luci-app-socat
 
@@ -114,15 +114,15 @@ function merge_package(){
 # 提取 ddns-scripts
 #merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/packages/net net/ddns-scripts
 # 提取 ntfs-3g
-#merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/packages/utils utils/ntfs-3g
+merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/packages/utils utils/ntfs-3g
 # 提取 hysteria
 #merge_package v5 https://github.com/sbwml/openwrt_helloworld.git package/passwall/packages hysteria
 # 提取 naiveproxy
 #merge_package master https://github.com/immortalwrt/packages.git package/passwall/packages net/naiveproxy
 #merge_package v5 https://github.com/sbwml/openwrt_helloworld.git package/passwall/packages naiveproxy
 # 提取 tailscale
-#merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/packages/net net/tailscale
+merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/packages/net net/tailscale
 # 提取 socat
-#merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/packages/net net/socat
+merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/packages/net net/socat
 # 提取 luci-app-socat
 merge_package main https://github.com/chenmozhijin/luci-app-socat.git feeds/lienol luci-app-socat
