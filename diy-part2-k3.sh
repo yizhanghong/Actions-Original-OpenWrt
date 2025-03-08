@@ -84,7 +84,7 @@ rm -rf feeds/packages/utils/ntfs-3g
 # 删除 passwall-packages 中 hysteria
 #rm -rf package/passwall/packages/hysteria
 # 删除 passwall-packages 中 naiveproxy
-#rm -rf package/passwall/packages/naiveproxy
+rm -rf package/passwall/packages/naiveproxy
 # 删除自带 tailscale
 rm -rf feeds/packages/net/tailscale
 # 删除自带 socat
@@ -119,7 +119,7 @@ merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/pa
 #merge_package v5 https://github.com/sbwml/openwrt_helloworld.git package/passwall/packages hysteria
 # 提取 naiveproxy
 #merge_package master https://github.com/immortalwrt/packages.git package/passwall/packages net/naiveproxy
-#merge_package v5 https://github.com/sbwml/openwrt_helloworld.git package/passwall/packages naiveproxy
+merge_package v5 https://github.com/sbwml/openwrt_helloworld.git package/passwall/packages naiveproxy
 # 提取 tailscale
 merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/packages/net net/tailscale
 # 提取 socat
