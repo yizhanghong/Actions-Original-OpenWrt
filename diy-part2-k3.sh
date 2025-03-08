@@ -78,7 +78,7 @@ git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci/luci-theme-argon
 
 # 删除自带 ddns-scripts
-#rm -rf feeds/packages/net/ddns-scripts
+rm -rf feeds/packages/net/ddns-scripts
 # 删除自带 ntfs-3g
 rm -rf feeds/packages/utils/ntfs-3g
 # 删除 passwall-packages 中 hysteria
@@ -112,7 +112,7 @@ function merge_package(){
     cd "$rootdir"
 }
 # 提取 ddns-scripts
-#merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/packages/net net/ddns-scripts
+merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/packages/net net/ddns-scripts
 # 提取 ntfs-3g
 merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/packages/utils utils/ntfs-3g
 # 提取 hysteria
