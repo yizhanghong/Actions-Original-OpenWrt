@@ -91,6 +91,8 @@ rm -rf feeds/packages/net/tailscale
 rm -rf feeds/packages/net/socat
 # 删除自带 luci-app-socat
 rm -rf feeds/lienol/luci-app-socat
+# 删除自带 luci-app-ksmbd
+rm -rf feeds/luci/applications/luci-app-ksmbd
 
 # 筛选程序
 function merge_package(){
@@ -126,3 +128,5 @@ merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/pa
 merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/packages/net net/socat
 # 提取 luci-app-socat
 merge_package main https://github.com/chenmozhijin/luci-app-socat.git feeds/lienol luci-app-socat
+# 提取 luci-app-ksmbd
+merge_package openwrt-24.10 https://github.com/openwrt/luci.git feeds/luci/applications applications/luci-app-ksmbd
