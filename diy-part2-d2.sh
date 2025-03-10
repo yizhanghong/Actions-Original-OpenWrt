@@ -82,7 +82,7 @@ rm -rf feeds/packages/net/ddns-scripts
 # 删除自带 ntfs-3g
 #rm -rf feeds/packages/utils/ntfs-3g
 # 删除自带 ksmbd-tools
-rm -rf feeds/packages/net/ksmbd-tools
+#rm -rf feeds/packages/net/ksmbd-tools
 # 删除自带 wsdd2
 #rm -rf feeds/packages/net/wsdd2
 # 删除 passwall-packages 中 hysteria
@@ -122,7 +122,7 @@ merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/pa
 # 提取 ntfs-3g
 #merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/packages/utils utils/ntfs-3g
 # 提取 ksmbd-tools
-merge_package openwrt-24.10 https://github.com/openwrt/packages.git feeds/packages/net net/ksmbd-tools
+#merge_package openwrt-24.10 https://github.com/openwrt/packages.git feeds/packages/net net/ksmbd-tools
 # 提取 wsdd2
 #merge_package openwrt-24.10 https://github.com/openwrt/packages.git feeds/packages/net net/wsdd2
 # 提取 hysteria
