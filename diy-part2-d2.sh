@@ -121,7 +121,7 @@ function merge_package(){
 merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/packages/net net/ddns-scripts
 # 提取 ntfs-3g
 #merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/packages/utils utils/ntfs-3g
-# 提取 wsdd2
+# 提取 ksmbd-tools
 merge_package openwrt-24.10 https://github.com/openwrt/packages.git feeds/packages/net net/ksmbd-tools
 # 提取 wsdd2
 #merge_package openwrt-24.10 https://github.com/openwrt/packages.git feeds/packages/net net/wsdd2
