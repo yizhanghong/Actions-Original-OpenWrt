@@ -81,6 +81,8 @@ git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci/luci-th
 rm -rf feeds/packages/net/ddns-scripts
 # 删除自带 ntfs-3g
 rm -rf feeds/packages/utils/ntfs-3g
+# 删除自带 wsdd2
+rm -rf feeds/packages/net/wsdd2
 # 删除 passwall-packages 中 hysteria
 #rm -rf package/passwall/packages/hysteria
 # 删除 passwall-packages 中 naiveproxy
@@ -92,7 +94,7 @@ rm -rf feeds/packages/net/socat
 # 删除自带 luci-app-socat
 rm -rf feeds/lienol/luci-app-socat
 # 删除自带 luci-app-ksmbd
-rm -rf feeds/luci/applications/luci-app-ksmbd
+#rm -rf feeds/luci/applications/luci-app-ksmbd
 
 # 筛选程序
 function merge_package(){
@@ -117,6 +119,8 @@ function merge_package(){
 merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/packages/net net/ddns-scripts
 # 提取 ntfs-3g
 merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/packages/utils utils/ntfs-3g
+# 提取 wsdd2
+merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/packages/net net/wsdd2
 # 提取 hysteria
 #merge_package v5 https://github.com/sbwml/openwrt_helloworld.git package/passwall/packages hysteria
 # 提取 naiveproxy
@@ -129,4 +133,4 @@ merge_package openwrt-23.05 https://github.com/immortalwrt/packages.git feeds/pa
 # 提取 luci-app-socat
 merge_package main https://github.com/chenmozhijin/luci-app-socat.git feeds/lienol luci-app-socat
 # 提取 luci-app-ksmbd
-merge_package openwrt-24.10 https://github.com/openwrt/luci.git feeds/luci/applications applications/luci-app-ksmbd
+#merge_package openwrt-24.10 https://github.com/openwrt/luci.git feeds/luci/applications applications/luci-app-ksmbd
